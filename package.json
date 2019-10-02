@@ -1,0 +1,20 @@
+{
+  "name": "pluft-desafio-backend",
+  "version": "1.0.0",
+  "description": "Desafio que consiste em criar uma API de agendamento de serviços",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "author": "Franklin B. Dantas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^5.19.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  },
+  "keywords": []
+}
