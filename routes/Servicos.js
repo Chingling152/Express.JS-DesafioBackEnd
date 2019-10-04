@@ -14,34 +14,34 @@ router.get(
 );
 
 router.post(
-    "/add",
+    "/cadastrar",
     (req,res)=>{
         let {titulo,descricao,vagas,horarioInicio,horarioFim,prestador} = req.body;
         if(!titulo){
             res.json({status:400,mensagemErro: "O titulo é obrigatorio"})
-        }
+        }else
         if(!vagas){
             res.json({status:400,mensagemErro: "O numero de vagas é obrigatorio"})
         }
         if(!horarioInicio){
             res.json({status:400,mensagemErro: "O horario inicial em que o serviço ficará disponivel é obrigatorio"})
-        }
+        }else
         if(!horarioFim){
             res.json({status:400,mensagemErro: "O horario final em que o serviço ficará disponivel é obrigatorio"})
-        }
+        }else
         if(!prestador){
             res.json({status:400,mensagemErro: "O ID do prestador desse serviço é obrigatorio"})
-        }
-        
-        Servico
+        }else{
+            Servico
             .create({titulo,descricao,vagas,horarioInicio,horarioFim,prestador})
             .then(i=> res.json({status:200,mensagemFeedback:"Serviço cadastrado com sucesso"}))
             .catch(i=> res.status(400).send({status:400,mensagemErro: i.errors[0].message || i}))
+        }
     }
 )
 
 router.get(
-    "/list-by-user/:id",
+    "/por-usuario/:id",
     (req,res)=>{
         var {id} = req.params
         if(id){

@@ -7,16 +7,16 @@
     "dialect": "postgres"
   },
   "test": {
-    "username": "api-pluft",
+    "username": "postgres",
     "password": "javascripto",
-    "database": "postgres",
+    "database": "api-pluft-test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "api-pluft",
+    "username": "postgres",
     "password": "javascripto",
-    "database": "postgres",
+    "database": "api-pluft-final",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

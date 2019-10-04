@@ -1,4 +1,5 @@
 # Pluft - Desafio Backend
+API de agendamento de serviços.
 
 ## Bibliotecas
 - **express**                       : Criação da API  		
@@ -7,10 +8,13 @@
 - **nodemon**                       : Permite programar em tempo real  
 
 ## Criar banco de dados
-Configurar os dados em config/config.json  
-executar o comando no cmd : **npx sequelize db:migrate**  
+- Altere os valores em **config/config.json** de acordo com seu banco de dados
+- executar o comando no cmd : **npx sequelize db:migrate**  
 
 ## Executar aplicação  
 
 Iniciar API : **npm start**  
 Tempo real (desenvolvimento) : **npx nodemon index.js**
+
+## Endpoints
+Todos os endpoints estão disponiveis e podem ser acessados atraves do postman neste [link]()
