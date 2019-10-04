@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../config/database');
 
-let servico = db.define('Servico', {
+module.exports = db.define('Servico', {
     titulo: {
       dataField: 'titulo',
       type:Sequelize.STRING,
@@ -35,9 +35,9 @@ let servico = db.define('Servico', {
       },
       allowNull:false
     }
-  }, {
+  },{
     timestamps:false,
     freezeTableName:true
-  }); 
+  }
+); 
   
-module.exports = servico;
