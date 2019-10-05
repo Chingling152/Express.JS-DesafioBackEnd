@@ -13,8 +13,9 @@ API de agendamento de serviços.
 
 ## Executar aplicação  
 
+Instalar dependencias : **npm install**
 Iniciar API : **npm start**  
 Tempo real (desenvolvimento) : **npx nodemon index.js**
 
 ## Endpoints
-Todos os endpoints estão disponiveis e podem ser acessados atraves do postman neste [link]()
+Todos os endpoints estão disponiveis e podem ser acessados atraves do postman neste [link](https://www.getpostman.com/collections/02a7f12690c57544b31b)
