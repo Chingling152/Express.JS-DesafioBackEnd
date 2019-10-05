@@ -17,6 +17,10 @@ module.exports = {
         allowNull:false,
         unique:true
       },
+      senha: {
+        type: Sequelize.STRING,
+        allowNull:false,
+      },
       privilegio: {
         type: Sequelize.INTEGER,
         allowNull:false

@@ -12,6 +12,11 @@ module.exports = db.define('Usuario', {
       type:Sequelize.STRING,
       allowNull:false
     },
+    senha: {
+      dataField: 'senha',
+      type:Sequelize.STRING,
+      allowNull:false
+    },
     privilegio:{
       dataField:'privilegio',
       type:Sequelize.INTEGER,
