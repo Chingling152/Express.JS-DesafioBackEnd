@@ -8,11 +8,13 @@ var agendamento = db.define('Agendamento',
 {
   numeroVaga: {
     dataField: 'numeroVaga',
+    type: Sequelize.INTEGER,
     allowNull:false,
-    type: Sequelize.INTEGER
   },
   dataAgendada: {
     dataField: 'dataAgendada',
+    isDate: {msg: "A data agendada não é uma data valida"},
+    
     allowNull:false,
     type: Sequelize.DATEONLY
   }, 
